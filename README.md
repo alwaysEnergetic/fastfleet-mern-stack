@@ -3,16 +3,16 @@
 </h1>       
           
 <p align="center">       
-  <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
+  <a href="#rocket-sobre-o-desafio">about the challenge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
   <a href="#Backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#Frontend">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;   
   <a href="#Mobile">Mobile</a> 
 </p>         
            
       
-## :rocket: Sobre o desafio  
+## :rocket: about the challenge 
 
-A aplicação consiste em um sistema de uma transportadora fictícia chamada FastFeet. Ela é uma aplicação completa envolvendo back-end, front-end e mobile, e que faz parte do desafio de certificação do bootcamp Gostack da **[rocketseat](https://rocketseat.com.br/gostack)**.
+The application consists of a fictitious carrier system called FastFeet. It is a complete application involving back-end, front-end and mobile, and that is part of the certification challenge of the bootcamp Gostock da **[rocketseat](https://rocketseat.com.br/gostack)**.
 
 <img src="/prev/Prev01.png">
 </br>
@@ -24,95 +24,94 @@ A aplicação consiste em um sistema de uma transportadora fictícia chamada Fas
 </br>
     
  
-## Ferramentas  
+## Tools  
 
 :whale: Docker 
 
-    No projeto foi utlizado a ferramenta docker para a criação do banco de dados. 
-    Acesse a documentação(https://docs.docker.com/get-docker/), para instalar a versão de acordo com o seu 
-    sistema operacional.
+    In the project, the docker tool was used to create the database.
+     Access the documentation (https://docs.docker.com/get-docker/), to install the version according to your
+     operational system.
 
    
-  Criar e subir uma base de dados (Postgres):
+  Create and upload a database (Postgres):
  
      $ docker run --name fastfeet -e POSTGRES_PASSWORD=fastfeet -p 5432:5432 -d postgres
      $ docker start fastfeet
 
-  Criar e subir uma base de dados Redis:
+  Create and upload a Redis database:
  
      $ docker run --name redisfastfeet -p 6379:6379 -d -t redis:alpine
      $ docker start redisfastfeet
 
 
-  Instalando o PostBird, aplicativo para visualização das informações do banco de dados.
+  Installing PostBird, an application to view database information.
 
-      Você pode acessar a documentação:(https://www.electronjs.org/apps/postbird) para a instalação de acordo com o seu sistema operacional.
+    You can access the documentation:(https://www.electronjs.org/apps/postbird) for the installation according to your operating system.
 
-  Acessando o postbird, preencha os dados de acesso, host, port, username e password de acordo com a database criada via docker.
+  Accessing postbird, fill in the access data, host, port, username and password according to the database created via docker.
  
-      Feito isso, dentro do postbird, crie um banco com nome fastfeet.
+      After that, inside postbird, create a database named fastfeet.
       
       
  ## 💹 Backend 
 
     $ git clone https://github.com/the-one-who-knoccks/FastFeet-Master.git
 
-  Acessando o diretório:
+  Accessing the directory:
 
     $ cd FastFeet-Master/backend
 
-  Instalando as dependências.
+  Installing dependencies.
 
-      rode o comando yarn ou yarn-install para instalar as dependências.
+      run the yarn or yarn-install command to install the dependencies.
 
 
    Migrations e seed.
 
-    Rode o comando  yarn sequelize db:migrate para criar as migrations e yarn sequelize db:seed:all para criar os seeds.
+    Run yarn sequelize db:migrate to create migrations and yarn sequelize db:seed:all to create seeds.
     
    .env
 
-     Altere o arquivo .env.example para .env e informae os parâmetros de acordo com seu ambiente de desenvolvimento.
+     Change the .env.example file to .env and inform the parameters according to your development environment.
 
- Iniciando o servidor.
+ Starting the server.
 
-    Para iniciar o servidor, rode o comando yarn dev.
+    To start the server, run the yarn dev command.
     
-  Servidor de email.
+  Email server.
 
-    Para rodar o servidor de email, rode o comando yarn queue.
+    To run the email server, run the yarn queue command.
     
 
 ## ⚛️  Frontend
 
-  Instalando as dependências.
+  Installing dependencies.
 
-      Rode o comando yarn ou yarn install. 
+      Run the yarn command or yarn install.
  
- Iniciando o servidor da aplicação web.
-
-      Para inciar o servidor da aplicação, rode o comando yarn start.
+ Starting the web application server.
+ 
+      To start the application server, run the yarn start command.
 
 
 ## ⚛️ Mobile
 
-  Setando o localhost e ip no Reactotron
+  Setting localhost and ip in Reactotron
 
-    Acesse a pasta mobile e navegue até a pasta src/services e no arquivo api.js, defina o url/localhost do seu         emulador. Depois vá até src/config/ReactotoronConfig e altere a parte ".configure({ host: 'ip da sua maquina aqui })"       Após isso, rode o comando abaixo para instalar as dependências:  
+    Access the mobile folder and navigate to the src/services folder and in the api.js file, set the url/localhost of your emulator. Then go to src/config/ReactotoronConfig and change the part ".configure({ host: 'ip of your machine here })" After that, run the command below to install the dependencies: 
     
     yarn ou yarn install.
 
 
-   Apos estar com o seu  emulador ou celular conectado, abra o terminal na pasta Mobile_Gobarber e rode o comando:
+   Once you have your emulator or cell phone connected, open the terminal in the Mobile_Gobarber folder and run the command:
     
     $ react-native run-android ou run-ios.
 
-   Em seguida apóis finalizar a instalação, rode: 
+   Then after finishing the installation, run: 
 
     $ react-native start ou yarn start no terminal.
     
-# Observação 
+# Observation 
 
-    Aplicação testada apenas em Android.
-
+    Application tested on Android only.
     
