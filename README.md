@@ -1,15 +1,7 @@
 <h1 align="center">
   <img alt="Fastfeet" title="Fastfeet" src="./backend/img/logo.png" width="300px" />
 </h1>       
-     
-<p align="center"> 
-  <a href="https://rocketseat.com.br">   
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361">  
-  </a> 
-      
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">  
-                
-              
+          
 <p align="center">       
   <a href="#rocket-sobre-o-desafio">Sobre o desafio</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; 
   <a href="#Backend">Backend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
